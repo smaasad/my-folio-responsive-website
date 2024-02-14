@@ -1,0 +1,369 @@
+/* *COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family:'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 41px;
+}
+.heading p strong{
+    font-size: 23px;
+}
+.button{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 43px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* *COMMON CSS ENDS */
+
+/* *NAVBAR STARTS */
+
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: block;
+}
+
+nav ul li:hover a{
+    background-color: #cfc91d;
+    color: #02918c;
+    border-radius: 50px;
+}
+
+
+/* *NAVBAR ENDS */
+
+/* * BANNER STARTS HERE */
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 727px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ #banner .row{
+    height: 727px;
+ }
+ #banner .banner_cnt{
+    color: white;
+    text-align: center;
+    width: 100%;
+ }
+ #banner .banner_cnt h6{
+    font-size: 30px;
+    font-weight: 400;
+ }
+ #banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+ }
+ #banner .banner_cnt img{
+    margin: 50px 0;
+ }
+
+/* * BANNER ENDS HERE */
+
+/* *ABOUT STARTS HERE */
+#about{
+    padding: 98px 0;
+}
+#about .heading p{
+    padding: 0 137px;
+}
+#about .about_card{
+    width: 25%;
+    background: 1px solid #0b1016;
+    padding: 37px 60px; 
+    border-right: 1px solid #0b1016;
+}
+#about .about_card:last-child{
+    border-right: none ;
+}
+/* *ABOUT ENDS HERE */
+
+/* =========== Service Section Css Start =========== */
+
+#service{
+    background-image: url(./../images/service_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+#service .innner_container{
+    width: 50%;
+}
+#service .heading{
+    text-align: left;
+} 
+
+#service .service_card{
+    width: 50%;
+    padding-top: 63px;
+}
+.service_card h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 17px 0;
+}
+.service_card p{
+    padding-right: 110px;
+}
+
+
+/* =========== Service Section Css End =========== */
+
+/* =========== My Work Section Css Start =========== */
+#mywork .heading p{
+    
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 27px;
+}
+
+#mywork .my_cont_img{
+width: 25%;
+}
+.my_cont_img img{
+width: 100%;
+height: 100%;
+}
+.my_cont_img{
+position: relative;
+}
+.my_cont_img .overlay h4{
+ font-size: 16px;
+ font-weight: 800;
+ color: #fff;
+}
+
+.my_cont_img .overlay p{
+font-size: 13px;
+font-weight: 400;
+color: #fff;
+padding: 20px 27px;
+}
+#mywork .overlay{
+position: absolute;
+background-color:rgba(2,145,139,.85);
+inset: 20px 28px;
+transform: scale(0);
+transform-origin:  bottom;
+transition: .5s;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+line-height: 20px;
+}
+#mywork .my_cont_img:hover .overlay{
+transform: scale(1);
+}
+#mywork .heading p{
+color: #7e8287;
+padding: 0 236px;
+
+}
+
+/* =========== My Work Section Css End =========== */
+
+
+/* =========== Contact Section Css Start =========== */
+/* #contact .heading p{
+    padding: 0 237px;
+}
+#contact .contact_form{
+    background-color: #0b0b0b;
+    padding: 70px 0;
+}
+#contact .contact_form input{
+    display: block;
+    margin: 0 auto;
+    background: none;
+    padding: 18px;
+    font-size: 16px;
+    color: #7e8287;
+    text-align: center;
+    border: none;
+    margin-bottom: 51px;
+    border-bottom: 1px solid #7e8287;
+    transition: .4s;
+}
+#contact .contact_form input:focus{
+    outline:none;
+    border-bottom-color: #02918c ;
+
+} */
+
+
+#contact .form form{
+    background-color: #0b0b0b;
+    padding: 70px 0;
+}
+.form input{
+    display: block;
+    margin: auto;
+    padding: 65px 363px 10px 363px;
+    background-color:#0a0a0b ;
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    border-left: none;
+}
+
+ /*.contact_form input{
+    display: block;
+    margin:  auto;
+    padding: 65px 363px 10px 363px;
+    background-color: #0a0a0b;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    text-align: center;
+    border: none;
+    border-left: none;
+    margin-bottom: 51px;
+    border-bottom: 1px solid #7e8287;
+    transition: .4s;
+}*/
+
+
+.form a button{
+   margin-left:46%;
+   margin-top: 70px;
+   margin-bottom: 70px;
+   
+}
+.form{
+    padding-top: 70px;
+}
+
+contact .contact_form input:focus{
+    outline: none;
+    border-bottom: #02918c;
+    transition: .4s;
+}
+
+#contact .contact_form input:nth-child(1),
+#contact .contact_form input:nth-child(2){
+    width:640px;
+} 
+
+#contact .contact_form input:nth-child(3),
+#contact .contact_form input:nth-child(4){
+    width: 920px;
+}
+#contact .form button{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* =========== Contact Section Css End =========== */
+
+
+@media(min-width:1400px){
+
+}
+@media(min-width:1200px) and (max-width:1399.99px){
+
+}
+@media(min-width:992px) and (max-width:1199.99px){
+   .container{
+    width: 940px;
+   } 
+   #banner{
+    height: 600px;
+   }
+   #banner .banner_cnt h1{
+    font-size: 58px;
+    letter-spacing: 25px;
+   }
+   #about .about_card{
+    padding: 35px 40px 55px;
+   }
+}
+@media(min-width:768px) and (max-width:991.99px){
+    .container{
+        width: 720px;
+    }
+    #about .about_card{
+        width: 50%;
+        padding: 35px 40px 55px;
+       }
+
+}
+@media(min-width:576px) and (max-width:767.99px){
+    
+}
+@media(min-width:0px) and (max-width:575.99px){
+    
+}
+
+
